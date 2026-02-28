@@ -20,10 +20,23 @@ This repository documents my journey toward becoming a Data Scientist & AI Engin
 
 ---
 
-## 🎯 Goal
+## 🛠 Skills & Tools
 
-To build strong fundamentals and industry-ready projects for Data Science & AI internships.
+- Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn)
+- SQL (Joins, Aggregations, Subqueries, Views)
+- Data Cleaning & Preprocessing
+- Statistical Analysis
+- Machine Learning Algorithms
+- Deep Learning (Neural Networks)
+- Generative AI & RAG
+- Git & GitHub
 
 ---
 
-## 📁 Repository Structure
+## 📈 Current Focus
+
+Building strong Data Science fundamentals while developing portfolio-ready AI projects for internships and placements.
+
+---
+
+⭐ Actively learning and building every day.
