@@ -1,0 +1,163 @@
+# 🧠 Map, Reduce & Filter in Python
+
+This project demonstrates the usage of Python's built-in functional programming tools:
+
+- `map()`
+- `filter()`
+- `reduce()`
+
+All examples are implemented using Jupyter Notebook.
+
+---
+
+## 📌 Topics Covered
+
+1. Map Function
+2. Filter Function
+3. Reduce Function
+4. Lambda Functions
+5. Practical Examples
+
+---
+
+## 🔹 1. Map Function
+
+### ✅ Syntax
+
+```python
+map(function, iterable)
+```
+
+The `map()` function applies a given function to every item in an iterable (like a list) and returns a map object.
+
+---
+
+### 📍 Example 1: Convert Names to Uppercase
+
+```python
+firstname = ["Adele", "Bob", "Carrie", "John"]
+
+upper_names = list(map(lambda x: x.upper(), firstname))
+print(upper_names)
+```
+
+**Output:**
+
+```
+['ADELE', 'BOB', 'CARRIE', 'JOHN']
+```
+
+---
+
+### 📍 Example 2: Area of a Circle
+
+```python
+import math
+
+def area(r):
+    return math.pi * (r ** 2)
+
+radii = [1, 2, 3, 4, 5]
+
+areas = list(map(area, radii))
+print(areas)
+```
+
+**Output:**
+
+```
+[3.1415..., 12.5663..., 28.2743..., 50.2654..., 78.5398...]
+```
+
+---
+
+### 📍 Example 3: Convert Celsius to Fahrenheit
+
+Formula:
+
+```
+F = (9/5) * C + 32
+```
+
+```python
+temps = [("Mumbai", 35), ("Berlin", 12), ("Tokyo", 25)]
+
+cel_to_f = lambda data: (data[0], (9/5) * data[1] + 32)
+
+result = list(map(cel_to_f, temps))
+print(result)
+```
+
+---
+
+## 🔹 2. Filter Function
+
+### ✅ Syntax
+
+```python
+filter(function, iterable)
+```
+
+The `filter()` function filters elements from an iterable based on a condition.
+
+---
+
+### 📍 Example: Filter Areas Greater Than 10
+
+```python
+areas = [3.14, 12.56, 28.27, 50.26, 78.53]
+
+filtered = list(filter(lambda x: x > 10, areas))
+print(filtered)
+```
+
+**Output:**
+
+```
+[12.56, 28.27, 50.26, 78.53]
+```
+
+---
+
+## 🔹 3. Reduce Function
+
+### ✅ Syntax
+
+```python
+from functools import reduce
+reduce(function, iterable)
+```
+
+The `reduce()` function applies a function cumulatively to the items of an iterable, reducing it to a single value.
+
+---
+
+### 📍 Example: Multiply All Elements in a List
+
+```python
+from functools import reduce
+
+data = [1, 2, 3, 4, 5]
+
+result = reduce(lambda x, y: x * y, data)
+print(result)
+```
+
+**Output:**
+
+```
+120
+```
+
+---
+
+## 📚 Key Concepts Used
+
+- Functional Programming
+- Lambda Functions
+- Iterables
+- Jupyter Notebook
+- Python Standard Library (`math`, `functools`)
+
+---
+
