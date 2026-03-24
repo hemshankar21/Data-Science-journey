@@ -4,18 +4,6 @@
 ![Matplotlib](https://img.shields.io/badge/Library-Matplotlib-orange)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
----
-
-
----
-
-
-
-
----
-
-
----
 
 ## 📥 Import Libraries
 
